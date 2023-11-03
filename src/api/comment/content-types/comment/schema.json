@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Comment"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "blogPost": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-post.blog-post",
+      "inversedBy": "comments"
+    }
+  }
+}
