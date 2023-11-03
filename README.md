@@ -2,7 +2,7 @@
 
 You can see in the [server config](config/server.js) that the populate webhooks config is enabled
 
-I created a [custom bulk create route]() and it's related [custom bulk create controller]() to handle the request, below is the sample request/response + both of the webhook responses (each separated).
+I created a [custom bulk create route](src/api/blog-post/routes/1-custom.js) and it's related [custom bulk create controller](src/api/blog-post/controllers/blog-post.js) to handle the request, below is the sample request/response + both of the webhook responses (each separated).
 Generally I would STRONGLY advise against creating a route like this as it makes error handling properly a lot harder but this is just a POC.
 
 ## Example Request/Response
